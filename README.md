@@ -44,16 +44,22 @@ Default output filenames we use:
 Two colors:
 
 Dataset  Protected Feature  Fairness (b:r)  Output File Name
+
 Census   Gender             1:3             adult.csv
+
 Census   Race               1:7             adult_r.csv
+
 Bank     Marital Status     1:2             bank.csv
+
 Bank     Age                2:3             bank_a.csv
 
 Multiple colors:
 
 Dataset  Protected Feature  Fairness (1/c)  Output File Name
+
 Census   Age            	1/3           	adult_4_color.csv
-Bank     Age                1/3             bank__4_color.csv
+
+Bank     Age                1/3             bank_4_color.csv
 
 
 
@@ -62,6 +68,7 @@ Bank     Age                1/3             bank__4_color.csv
 For run time test, run the following file:
 
 test_script_run_time.py - for value objective
+
 test_script_run_time_moseley_wang.py - for revenue objective
 
 >📋  The file saves data to a chosen directory. See the main function and create the directory in the same folder as the .py file in advance. The user can 
